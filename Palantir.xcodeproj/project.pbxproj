@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0260D7D7110370070012A350 /* Palantir.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0260D7D6110370070012A350 /* Palantir.icns */; };
+		02717960110CE68800C0E5EB /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271795F110CE68800C0E5EB /* SettingsManager.m */; };
+		027179A8110F968D00C0E5EB /* palantir-status.png in Resources */ = {isa = PBXBuildFile; fileRef = 027179A7110F968C00C0E5EB /* palantir-status.png */; };
+		027179CA11100E8600C0E5EB /* palantir-status-alternate.png in Resources */ = {isa = PBXBuildFile; fileRef = 027179C911100E8600C0E5EB /* palantir-status-alternate.png */; };
+		02CEAF9510EE6616002C45A4 /* Configuration.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* Configuration.xib */; };
+		02CEAF9610EE661B002C45A4 /* PluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CEACE210ECC883002C45A4 /* PluginManager.m */; };
+		02CEAF9710EE661C002C45A4 /* PalantirAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* PalantirAppDelegate.m */; };
+		02CEAF9810EE661D002C45A4 /* NSApplication+Plugins.m in Sources */ = {isa = PBXBuildFile; fileRef = 0218151B10CC0A0000372D4B /* NSApplication+Plugins.m */; };
+		02CEAF9910EE6620002C45A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		02CEB48D10F2190A002C45A4 /* PalantirPluggable.h in Headers */ = {isa = PBXBuildFile; fileRef = 02731F4D10E7361300DCE8DF /* PalantirPluggable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02CEB48E10F2190A002C45A4 /* PalantirPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 02AFE58510C398450042B28C /* PalantirPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02CEB48F10F2190A002C45A4 /* PalantirPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 02731FF510E7427B00DCE8DF /* PalantirPlugin.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02722B7A10F24C09009039E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02CEB47B10F2189A002C45A4;
+			remoteInfo = "Palantir Framework";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0218151A10CC0A0000372D4B /* NSApplication+Plugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+Plugins.h"; sourceTree = "<group>"; };
+		0218151B10CC0A0000372D4B /* NSApplication+Plugins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+Plugins.m"; sourceTree = "<group>"; };
+		0260D7D6110370070012A350 /* Palantir.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Palantir.icns; sourceTree = "<group>"; };
+		0271795E110CE68800C0E5EB /* SettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsManager.h; sourceTree = "<group>"; };
+		0271795F110CE68800C0E5EB /* SettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsManager.m; sourceTree = "<group>"; };
+		027179A7110F968C00C0E5EB /* palantir-status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palantir-status.png"; sourceTree = "<group>"; };
+		027179C911100E8600C0E5EB /* palantir-status-alternate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "palantir-status-alternate.png"; sourceTree = "<group>"; };
+		02731F4D10E7361300DCE8DF /* PalantirPluggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalantirPluggable.h; sourceTree = "<group>"; };
+		02731FF510E7427B00DCE8DF /* PalantirPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalantirPlugin.m; sourceTree = "<group>"; };
+		02AFE58510C398450042B28C /* PalantirPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalantirPlugin.h; sourceTree = "<group>"; };
+		02CEACE110ECC883002C45A4 /* PluginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = PluginManager.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
+		02CEACE210ECC883002C45A4 /* PluginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginManager.m; sourceTree = "<group>"; };
+		02CEAF8110EE65E1002C45A4 /* Palantir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palantir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02CEAF8310EE65E1002C45A4 /* Palantir-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Palantir-Info.plist"; sourceTree = "<group>"; };
+		02CEB3AA10F155B5002C45A4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		02CEB47C10F2189A002C45A4 /* Palantir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Palantir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02CEB47D10F2189A002C45A4 /* Palantir Framework-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Palantir Framework-Info.plist"; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Configuration.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* PalantirAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalantirAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* PalantirAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalantirAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* Palantir_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Palantir_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0218161310CD819600372D4B /* Shared Classes */ = {
+			isa = PBXGroup;
+			children = (
+				02731F4D10E7361300DCE8DF /* PalantirPluggable.h */,
+				02AFE58510C398450042B28C /* PalantirPlugin.h */,
+				02731FF510E7427B00DCE8DF /* PalantirPlugin.m */,
+			);
+			name = "Shared Classes";
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3D80F4B6AC300CF3369 /* PalantirAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* PalantirAppDelegate.m */,
+				0218151A10CC0A0000372D4B /* NSApplication+Plugins.h */,
+				0218151B10CC0A0000372D4B /* NSApplication+Plugins.m */,
+				02CEACE110ECC883002C45A4 /* PluginManager.h */,
+				02CEACE210ECC883002C45A4 /* PluginManager.m */,
+				0271795E110CE68800C0E5EB /* SettingsManager.h */,
+				0271795F110CE68800C0E5EB /* SettingsManager.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02CEB3AA10F155B5002C45A4 /* Security.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02CEAF8110EE65E1002C45A4 /* Palantir.app */,
+				02CEB47C10F2189A002C45A4 /* Palantir.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Palantir */ = {
+			isa = PBXGroup;
+			children = (
+				0218161310CD819600372D4B /* Shared Classes */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Palantir;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* Palantir_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				027179A7110F968C00C0E5EB /* palantir-status.png */,
+				027179C911100E8600C0E5EB /* palantir-status-alternate.png */,
+				0260D7D6110370070012A350 /* Palantir.icns */,
+				02CEB47D10F2189A002C45A4 /* Palantir Framework-Info.plist */,
+				02CEAF8310EE65E1002C45A4 /* Palantir-Info.plist */,
+				1DDD58140DA1D0A300B32029 /* Configuration.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		02CEB47710F2189A002C45A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CEB48E10F2190A002C45A4 /* PalantirPlugin.h in Headers */,
+				02CEB48D10F2190A002C45A4 /* PalantirPluggable.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		02CEAF8010EE65E1002C45A4 /* Palantir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02CEAF8610EE65E2002C45A4 /* Build configuration list for PBXNativeTarget "Palantir" */;
+			buildPhases = (
+				02CEAF7D10EE65E1002C45A4 /* Resources */,
+				02CEAF7E10EE65E1002C45A4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02722B7B10F24C09009039E2 /* PBXTargetDependency */,
+			);
+			name = Palantir;
+			productName = Palantir;
+			productReference = 02CEAF8110EE65E1002C45A4 /* Palantir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02CEB47B10F2189A002C45A4 /* Palantir Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02CEB48110F2189C002C45A4 /* Build configuration list for PBXNativeTarget "Palantir Framework" */;
+			buildPhases = (
+				02CEB47710F2189A002C45A4 /* Headers */,
+				02CEB47810F2189A002C45A4 /* Resources */,
+				02CEB47910F2189A002C45A4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Palantir Framework";
+			productName = "Palantir Framework";
+			productReference = 02CEB47C10F2189A002C45A4 /* Palantir.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Palantir" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Palantir */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02CEAF8010EE65E1002C45A4 /* Palantir */,
+				02CEB47B10F2189A002C45A4 /* Palantir Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02CEAF7D10EE65E1002C45A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CEAF9510EE6616002C45A4 /* Configuration.xib in Resources */,
+				0260D7D7110370070012A350 /* Palantir.icns in Resources */,
+				027179A8110F968D00C0E5EB /* palantir-status.png in Resources */,
+				027179CA11100E8600C0E5EB /* palantir-status-alternate.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02CEB47810F2189A002C45A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02CEAF7E10EE65E1002C45A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CEAF9610EE661B002C45A4 /* PluginManager.m in Sources */,
+				02CEAF9710EE661C002C45A4 /* PalantirAppDelegate.m in Sources */,
+				02CEAF9810EE661D002C45A4 /* NSApplication+Plugins.m in Sources */,
+				02CEAF9910EE6620002C45A4 /* main.m in Sources */,
+				02717960110CE68800C0E5EB /* SettingsManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02CEB47910F2189A002C45A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CEB48F10F2190A002C45A4 /* PalantirPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02722B7B10F24C09009039E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02CEB47B10F2189A002C45A4 /* Palantir Framework */;
+			targetProxy = 02722B7A10F24C09009039E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1DDD58140DA1D0A300B32029 /* Configuration.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = Configuration.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02CEAF8410EE65E2002C45A4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Palantir-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Palantir;
+			};
+			name = Development;
+		};
+		02CEAF8510EE65E2002C45A4 /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Palantir-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				NDEBUG = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Palantir;
+				ZERO_LINK = NO;
+			};
+			name = Production;
+		};
+		02CEB47F10F2189B002C45A4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Palantir Framework-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Palantir;
+			};
+			name = Development;
+		};
+		02CEB48010F2189B002C45A4 /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Palantir Framework-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Palantir;
+				ZERO_LINK = NO;
+			};
+			name = Production;
+		};
+		C01FCF4F08A954540054247B /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Development;
+		};
+		C01FCF5008A954540054247B /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Production;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02CEAF8610EE65E2002C45A4 /* Build configuration list for PBXNativeTarget "Palantir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02CEAF8410EE65E2002C45A4 /* Development */,
+				02CEAF8510EE65E2002C45A4 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
+		};
+		02CEB48110F2189C002C45A4 /* Build configuration list for PBXNativeTarget "Palantir Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02CEB47F10F2189B002C45A4 /* Development */,
+				02CEB48010F2189B002C45A4 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Palantir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Development */,
+				C01FCF5008A954540054247B /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

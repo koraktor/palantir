@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Palantir' target in the 'Palantir' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

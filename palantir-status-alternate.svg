@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32"
+   height="32"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47pre0 r21549"
+   sodipodi:docname="palantir-status.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <title
+     id="title3607">Palantír Status Icon</title>
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective3600"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3600-7"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.313708"
+     inkscape:cx="-14.490136"
+     inkscape:cy="13.468777"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1440"
+     inkscape:window-height="804"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Palantír Status Icon</dc:title>
+        <dc:date>26.01.2010</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Sebastian Staudt</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://www.opensource.org/licenses/bsd-license.html" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1020.3622)">
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#ffffff;stroke-width:0.69099325000000000;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path2816"
+       sodipodi:cx="15.680426"
+       sodipodi:cy="15.936085"
+       sodipodi:rx="5.79494"
+       sodipodi:ry="3.5792277"
+       d="m 21.475366,15.936085 c 0,1.976753 -2.594483,3.579227 -5.79494,3.579227 -3.200457,0 -5.7949404,-1.602474 -5.7949404,-3.579227 0,-1.976753 2.5944834,-3.579228 5.7949404,-3.579228 3.200457,0 5.79494,1.602475 5.79494,3.579228 z"
+       transform="matrix(2.5021829,0,0,4.0511533,-23.235293,971.80268)" />
+    <path
+       id="path3625"
+       style="fill:none;stroke:#ffffff;stroke-width:1.60000001999999997;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:5.59999990000000025;stroke-opacity:1;stroke-dasharray:none"
+       d="m 15.965716,1036.009 c -1.6e-5,0 -3e-5,0 -3.8e-5,0 -2.82e-4,-7e-4 0.0011,-9e-4 0.0013,-9e-4 0.0055,-5e-4 0.0074,0.01 0.0072,0.01 -0.0013,0.019 -0.03615,0.022 -0.05569,0.019 -0.0781,-0.015 -0.09236,-0.1097 -0.07254,-0.171 0.06067,-0.1754 0.310509,-0.1889 0.471266,-0.1185 0.410199,0.1735 0.455406,0.6761 0.286948,0.9951 -0.377443,0.7146 -1.431064,0.7269 -2.124318,0.3474 -1.407785,-0.7711 -1.501121,-2.5467 -0.761249,-3.6761 1.391083,-2.123 4.645753,-2.0751 6.778022,-0.7205 3.768015,2.3945 3.90162,7.2978 1.594598,10.3783 -3.874341,5.1734 -12.084252,4.902 -17.4029322,1.1731 m 11.3100662,-8.2427 c -10e-7,0 3.8e-5,0 6e-5,0 7.21e-4,2e-4 3.32e-4,0 1.72e-4,0 -0.0023,0 -0.01109,0 -0.01451,7e-4 -0.02071,-0.01 -0.0066,-0.036 0.0063,-0.053 0.05579,-0.048 0.148941,-0.016 0.190958,0.02 0.128375,0.1385 0.01522,0.352 -0.12674,0.4512 -0.362373,0.2532 -0.839179,0.032 -1.043572,-0.2595 -0.457963,-0.6704 0.05772,-1.5502 0.747695,-1.9349 1.401271,-0.7815 3.054575,0.024 3.706219,1.2063 1.225182,2.2156 -0.445436,4.8896 -2.73731,5.9798 -4.050074,1.927 -8.5527932,-0.4137 -10.1859533,-3.867 -2.7426755,-5.7991 1.6077617,-12.4692 7.6402523,-15.0143 m 1.805815,13.4709 c 1.6e-5,0 -9e-6,10e-5 -2.2e-5,10e-5 -4.42e-4,6e-4 -0.0013,-4e-4 -0.0016,-7e-4 -0.003,0 0.0029,-0.01 0.0062,-0.01 0.02218,-0.01 0.04331,0.013 0.04886,0.028 0.02232,0.07 -0.05659,0.134 -0.1185,0.1456 -0.189004,0.031 -0.325787,-0.1628 -0.344527,-0.33 -0.04789,-0.4276 0.383776,-0.7161 0.756628,-0.7353 0.835402,-0.036 1.373406,0.8222 1.37662,1.5873 0.006,1.5523 -1.553449,2.5179 -2.94497,2.469 -2.616267,-0.084 -4.200322,-2.8141 -4.040712,-5.2593 0.282053,-4.321 4.651166,-6.8837 8.591354,-6.5106 6.617011,0.6251 10.476489,7.5674 9.762678,13.8408" />
+  </g>
+</svg>
