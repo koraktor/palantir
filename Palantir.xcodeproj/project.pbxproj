@@ -11,6 +11,8 @@
 		02717960110CE68800C0E5EB /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271795F110CE68800C0E5EB /* SettingsManager.m */; };
 		027179A8110F968D00C0E5EB /* palantir-status.png in Resources */ = {isa = PBXBuildFile; fileRef = 027179A7110F968C00C0E5EB /* palantir-status.png */; };
 		027179CA11100E8600C0E5EB /* palantir-status-alternate.png in Resources */ = {isa = PBXBuildFile; fileRef = 027179C911100E8600C0E5EB /* palantir-status-alternate.png */; };
+		02717A641116A53D00C0E5EB /* SettingsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0271795E110CE68800C0E5EB /* SettingsManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		02717AA81116A61200C0E5EB /* PluginManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CEACE110ECC883002C45A4 /* PluginManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		02CEAF9510EE6616002C45A4 /* Configuration.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* Configuration.xib */; };
 		02CEAF9610EE661B002C45A4 /* PluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CEACE210ECC883002C45A4 /* PluginManager.m */; };
 		02CEAF9710EE661C002C45A4 /* PalantirAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* PalantirAppDelegate.m */; };
@@ -165,6 +167,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02717AA81116A61200C0E5EB /* PluginManager.h in Headers */,
+				02717A641116A53D00C0E5EB /* SettingsManager.h in Headers */,
 				02CEB48E10F2190A002C45A4 /* PalantirPlugin.h in Headers */,
 				02CEB48D10F2190A002C45A4 /* PalantirPluggable.h in Headers */,
 			);
