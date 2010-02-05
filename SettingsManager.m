@@ -17,6 +17,7 @@
     NSMutableDictionary *pluginSettings = [[plugins objectForKey:aPlugin.identifier] objectForKey:@"settings"];
     [pluginSettings setObject:aValue forKey:aName];
     [[NSUserDefaults standardUserDefaults] setObject:plugins forKey:@"plugins"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (id)settingWithName:(NSString *)aName forPlugin:(PalantirPlugin *)aPlugin {

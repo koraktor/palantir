@@ -29,6 +29,7 @@
 
     [[NSUserDefaults standardUserDefaults] setObject:self.availablePlugins
                                            forKey:@"plugins"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)activatePlugin:(NSString *)pluginIdentifier {
