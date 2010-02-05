@@ -9,7 +9,12 @@ feature you can think of, e.g. mail or news feed notifications.
 ## Features
 
 * A central configuration for the App itself and the plugins
-* A simple plugin interface to create own Palantír plugin
+* A simple plugin interface to create own Palantír plugins
+
+## Available Plugins
+
+Right now, there's only one plugin available for Palantír. It's called Macnancy
+and it's also available as source code [here][3] on GitHub.
 
 ## Future plans
 
@@ -48,3 +53,4 @@ LICENSE file.
 
   [1]: http://github.com/koraktor/palantir
   [2]: http://github.com/koraktor/palantir/issues
+  [3]: http://github.com/koraktor/macnancy
