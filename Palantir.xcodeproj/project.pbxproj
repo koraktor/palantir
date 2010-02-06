@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0213D764111CE5160027CF23 /* Palantir.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 02CEB47C10F2189A002C45A4 /* Palantir.framework */; };
 		0260D7D7110370070012A350 /* Palantir.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0260D7D6110370070012A350 /* Palantir.icns */; };
 		02717960110CE68800C0E5EB /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271795F110CE68800C0E5EB /* SettingsManager.m */; };
 		027179A8110F968D00C0E5EB /* palantir-status.png in Resources */ = {isa = PBXBuildFile; fileRef = 027179A7110F968C00C0E5EB /* palantir-status.png */; };
@@ -32,6 +33,19 @@
 			remoteInfo = "Palantir Framework";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0213D76B111CE51B0027CF23 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0213D764111CE5160027CF23 /* Palantir.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0218151A10CC0A0000372D4B /* NSApplication+Plugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+Plugins.h"; sourceTree = "<group>"; };
@@ -184,6 +198,7 @@
 			buildPhases = (
 				02CEAF7D10EE65E1002C45A4 /* Resources */,
 				02CEAF7E10EE65E1002C45A4 /* Sources */,
+				0213D76B111CE51B0027CF23 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -359,7 +374,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "Palantir Framework-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
@@ -385,7 +400,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "Palantir Framework-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
