@@ -6,8 +6,23 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0213D7F3111D870A0027CF23 /* Git version */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0213D7F7111D87280027CF23 /* Build configuration list for PBXAggregateTarget "Git version" */;
+			buildPhases = (
+				0213D7F2111D870A0027CF23 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Git version";
+			productName = "Git version";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0213D764111CE5160027CF23 /* Palantir.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 02CEB47C10F2189A002C45A4 /* Palantir.framework */; };
+		0213D825111D95AF0027CF23 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 0213D824111D95AF0027CF23 /* Credits.html */; };
 		0260D7D7110370070012A350 /* Palantir.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0260D7D6110370070012A350 /* Palantir.icns */; };
 		02717960110CE68800C0E5EB /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0271795F110CE68800C0E5EB /* SettingsManager.m */; };
 		027179A8110F968D00C0E5EB /* palantir-status.png in Resources */ = {isa = PBXBuildFile; fileRef = 027179A7110F968C00C0E5EB /* palantir-status.png */; };
@@ -25,6 +40,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0213D7F8111D87390027CF23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0213D7F3111D870A0027CF23 /* Git version */;
+			remoteInfo = "Git version";
+		};
 		02722B7A10F24C09009039E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -48,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0213D824111D95AF0027CF23 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		0218151A10CC0A0000372D4B /* NSApplication+Plugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+Plugins.h"; sourceTree = "<group>"; };
 		0218151B10CC0A0000372D4B /* NSApplication+Plugins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+Plugins.m"; sourceTree = "<group>"; };
 		0260D7D6110370070012A350 /* Palantir.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Palantir.icns; sourceTree = "<group>"; };
@@ -162,6 +185,7 @@
 				02CEB47D10F2189A002C45A4 /* Palantir Framework-Info.plist */,
 				02CEAF8310EE65E1002C45A4 /* Palantir-Info.plist */,
 				1DDD58140DA1D0A300B32029 /* Configuration.xib */,
+				0213D824111D95AF0027CF23 /* Credits.html */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -204,6 +228,7 @@
 			);
 			dependencies = (
 				02722B7B10F24C09009039E2 /* PBXTargetDependency */,
+				0213D7F9111D87390027CF23 /* PBXTargetDependency */,
 			);
 			name = Palantir;
 			productName = Palantir;
@@ -241,6 +266,7 @@
 			targets = (
 				02CEAF8010EE65E1002C45A4 /* Palantir */,
 				02CEB47B10F2189A002C45A4 /* Palantir Framework */,
+				0213D7F3111D870A0027CF23 /* Git version */,
 			);
 		};
 /* End PBXProject section */
@@ -254,6 +280,7 @@
 				0260D7D7110370070012A350 /* Palantir.icns in Resources */,
 				027179A8110F968D00C0E5EB /* palantir-status.png in Resources */,
 				027179CA11100E8600C0E5EB /* palantir-status-alternate.png in Resources */,
+				0213D825111D95AF0027CF23 /* Credits.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +292,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0213D7F2111D870A0027CF23 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=$PATH:$HOME/bin:$HOME/local/bin:/sw/bin:/opt/local/bin\nVERSION=$(cd \"$PROJECT_DIR\"; git describe)\nLONG_VERSION=$(echo $VERSION | sed -e \"s/\\-/\\./\" -e \"s/^v//\" -e \"s/-.*//\")\nSHORT_VERSION=$(echo $VERSION | sed -e \"s/\\-.*//\" -e \"s/^v//\")\n\necho -n \"#define LONG_VERSION $LONG_VERSION\n#define GIT_VERSION $VERSION\n#define SHORT_VERSION $SHORT_VERSION\" > \"$PROJECT_TEMP_DIR/revision\"\ntouch Palantir-Info.plist";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02CEAF7E10EE65E1002C45A4 /* Sources */ = {
@@ -290,6 +333,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0213D7F9111D87390027CF23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0213D7F3111D870A0027CF23 /* Git version */;
+			targetProxy = 0213D7F8111D87390027CF23 /* PBXContainerItemProxy */;
+		};
 		02722B7B10F24C09009039E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 02CEB47B10F2189A002C45A4 /* Palantir Framework */;
@@ -310,6 +358,23 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0213D7F5111D870A0027CF23 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Git version";
+			};
+			name = Development;
+		};
+		0213D7F6111D870A0027CF23 /* Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Git version";
+			};
+			name = Production;
+		};
 		02CEAF8410EE65E2002C45A4 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,6 +387,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "Palantir-Info.plist";
+				INFOPLIST_PREFIX_HEADER = $PROJECT_TEMP_DIR/revision;
+				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				OTHER_LDFLAGS = (
@@ -346,6 +413,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "Palantir-Info.plist";
+				INFOPLIST_PREFIX_HEADER = $PROJECT_TEMP_DIR/revision;
+				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				NDEBUG = "";
@@ -447,6 +516,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0213D7F7111D87280027CF23 /* Build configuration list for PBXAggregateTarget "Git version" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0213D7F5111D870A0027CF23 /* Development */,
+				0213D7F6111D870A0027CF23 /* Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Production;
+		};
 		02CEAF8610EE65E2002C45A4 /* Build configuration list for PBXNativeTarget "Palantir" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

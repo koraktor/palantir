@@ -13,7 +13,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="644"/>
-			<integer value="542"/>
+			<integer value="371"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -396,19 +396,37 @@
 				<string key="NSTitle"/>
 				<object class="NSMutableArray" key="NSMenuItems">
 					<bool key="EncodedWithXMLCoder">YES</bool>
+					<object class="NSMenuItem" id="555925556">
+						<reference key="NSMenu" ref="31951584"/>
+						<string key="NSTitle">Über Palantír</string>
+						<string key="NSKeyEquiv"/>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<object class="NSCustomResource" key="NSOnImage" id="78545449">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">NSMenuCheckmark</string>
+						</object>
+						<object class="NSCustomResource" key="NSMixedImage" id="598521095">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">NSMenuMixedState</string>
+						</object>
+					</object>
+					<object class="NSMenuItem" id="33651859">
+						<reference key="NSMenu" ref="31951584"/>
+						<bool key="NSIsDisabled">YES</bool>
+						<bool key="NSIsSeparator">YES</bool>
+						<string key="NSTitle"/>
+						<string key="NSKeyEquiv"/>
+						<int key="NSMnemonicLoc">2147483647</int>
+						<reference key="NSOnImage" ref="78545449"/>
+						<reference key="NSMixedImage" ref="598521095"/>
+					</object>
 					<object class="NSMenuItem" id="786352656">
 						<reference key="NSMenu" ref="31951584"/>
 						<string key="NSTitle">Einstellungen...</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<object class="NSCustomResource" key="NSOnImage" id="959455081">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">NSMenuCheckmark</string>
-						</object>
-						<object class="NSCustomResource" key="NSMixedImage" id="960665782">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">NSMenuMixedState</string>
-						</object>
+						<reference key="NSOnImage" ref="78545449"/>
+						<reference key="NSMixedImage" ref="598521095"/>
 					</object>
 					<object class="NSMenuItem" id="550379294">
 						<reference key="NSMenu" ref="31951584"/>
@@ -417,16 +435,16 @@
 						<string key="NSTitle"/>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="959455081"/>
-						<reference key="NSMixedImage" ref="960665782"/>
+						<reference key="NSOnImage" ref="78545449"/>
+						<reference key="NSMixedImage" ref="598521095"/>
 					</object>
 					<object class="NSMenuItem" id="46417842">
 						<reference key="NSMenu" ref="31951584"/>
 						<string key="NSTitle">Palantír beenden</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
-						<reference key="NSOnImage" ref="959455081"/>
-						<reference key="NSMixedImage" ref="960665782"/>
+						<reference key="NSOnImage" ref="78545449"/>
+						<reference key="NSMixedImage" ref="598521095"/>
 					</object>
 				</object>
 			</object>
@@ -537,6 +555,14 @@
 						<reference key="destination" ref="786352656"/>
 					</object>
 					<int key="connectionID">652</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">showAboutPanel:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="555925556"/>
+					</object>
+					<int key="connectionID">658</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -732,6 +758,8 @@
 							<reference ref="786352656"/>
 							<reference ref="46417842"/>
 							<reference ref="550379294"/>
+							<reference ref="555925556"/>
+							<reference ref="33651859"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -748,6 +776,16 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">654</int>
 						<reference key="object" ref="550379294"/>
+						<reference key="parent" ref="31951584"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">655</int>
+						<reference key="object" ref="555925556"/>
+						<reference key="parent" ref="31951584"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">657</int>
+						<reference key="object" ref="33651859"/>
 						<reference key="parent" ref="31951584"/>
 					</object>
 				</object>
@@ -796,6 +834,8 @@
 					<string>645.IBPluginDependency</string>
 					<string>647.IBPluginDependency</string>
 					<string>654.IBPluginDependency</string>
+					<string>655.IBPluginDependency</string>
+					<string>657.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -847,7 +887,9 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{161, 626}, {166, 53}}</string>
+					<string>{{161, 596}, {166, 83}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -870,7 +912,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">654</int>
+			<int key="maxID">658</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -886,8 +928,17 @@
 					<string key="className">PalantirAppDelegate</string>
 					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">openConfiguration:</string>
-						<string key="NS.object.0">id</string>
+						<bool key="EncodedWithXMLCoder">YES</bool>
+						<object class="NSArray" key="dict.sortedKeys">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>openConfiguration:</string>
+							<string>showAboutPanel:</string>
+						</object>
+						<object class="NSMutableArray" key="dict.values">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+						</object>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>

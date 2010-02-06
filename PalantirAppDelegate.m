@@ -36,10 +36,18 @@
     }
 }
 
--(IBAction)openConfiguration:(id)sender
-{
+-(IBAction)openConfiguration:(id)sender {
 	[self.window makeKeyAndOrderFront:self];
-    [self.window display];
+}
+
+-(IBAction)showAboutPanel:(id)sender {
+    NSString *gitVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"BundleGitVersion"];
+    NSMutableDictionary *aboutDictionary = [[NSMutableDictionary alloc] init];
+	if(gitVersion) {
+		[aboutDictionary addEntriesFromDictionary:[[NSDictionary alloc] initWithObjectsAndKeys:gitVersion, @"Version", nil]];
+    }
+
+    [NSApp orderFrontStandardAboutPanelWithOptions:aboutDictionary];
 }
 
 - (void)dealloc {

@@ -20,6 +20,7 @@
 }
 
 -(IBAction)openConfiguration:(id)sender;
+-(IBAction)showAboutPanel:(id)sender;
 
 @property (assign) IBOutlet   NSMenu        *menu;
 @property (assign) IBOutlet   PluginManager *pluginManager;
