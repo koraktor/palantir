@@ -29,6 +29,8 @@
     
     [self.window setReleasedWhenClosed:NO];
 
+    [self.pluginManager initialize];
+
     NSRunLoop *mainRunLoop = [NSRunLoop mainRunLoop];
     for(NSObject<PalantirPluggable> *plugin in [self.pluginManager.activePlugins allValues]) {
         NSTimer *timer = [NSTimer timerWithTimeInterval:[plugin actionInterval] target:plugin selector:@selector(action) userInfo:nil repeats:YES];

@@ -15,7 +15,7 @@
 @synthesize activePlugins, availablePlugins, configurationTabView,
             pluginIdentifiers, settingsManager;
 
-- (void)awakeFromNib {
+- (void)initialize {
     self.activePlugins = [NSMutableDictionary dictionary];
     self.availablePlugins = [[NSUserDefaults standardUserDefaults] objectForKey:@"plugins"];
     if(self.availablePlugins == nil) {

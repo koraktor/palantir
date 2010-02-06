@@ -32,6 +32,7 @@
 - (void)checkPlugins;
 - (void)deactivatePlugin:(NSString *)pluginIdentifier;
 - (void)findPlugins;
+- (void)initialize;
 - (BOOL)isPluginActive:(NSString *)pluginIdentifier;
 - (void)togglePlugin:(NSString *)pluginIdentifier;
 
