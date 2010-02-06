@@ -1,0 +1,52 @@
+---
+pages:
+ - name: About
+   url:  index.html
+ - name: License
+   url:  license.html
+plugins:
+ - name: Macnancy
+   url:  macnancy.html
+---
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+    <head>
+        <link rel="icon" href="images/palantir.png" type="image/png" />
+        <link rel="shortcut icon" href="images/palantir.png" type="image/png" />
+        <link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="Sebastian Staudt" />
+
+        <title>Palant&iacute;r - {{ page.title }}</title>
+    </head>
+    <body>
+        <div id="content">
+            {{ content }}
+        </div>
+        <div id="menu">
+            {% for item in page.pages %}
+                {% if item.name == page.title %}
+                    <span class="active">&raquo; {{item.name}}</span>
+                {% else %}
+                    <a href="{{item.url}}">{{item.name}}</a>
+                {% endif %}
+            {% endfor %}
+            <h3>Plugins</h3>
+            {% for item in page.plugins %}
+                {% if item.name == page.title %}
+                    <span class="active">&raquo; {{item.name}}</span>
+                {% else %}
+                    <a href="{{item.url}}">{{item.name}}</a>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div id="footer">
+            {{ site.time | date: "%Y" }} &mdash; Sebastian Staudt
+        </div>
+    </body>
+</html>
+
+<!-- This page has been last updated on {{ site.time | date: "%m/%d/%Y" }} -->

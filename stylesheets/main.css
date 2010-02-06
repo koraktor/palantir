@@ -1,0 +1,83 @@
+html {
+    background: #ffffff;
+    height:     100%;
+    width:      100%;
+}
+
+body {
+    font-family: "Gill Sans", "Verdana", sans-serif;
+    padding: 50px 0px 20px 50px;
+}
+
+a {
+    color: #666666;
+}
+
+a:hover {
+    color: #999999;
+}
+
+div#content {
+    float: left;
+    width: 500px;
+}
+
+div#footer {
+    background:    #dddddd;
+    border:        2px solid #bbbbbb;
+    border-radius: 5px;
+    clear:         both;
+    margin-left:   175px;
+    margin-top:    50px;
+    padding:       4px;
+    text-align:    center;
+    width:         200px;
+
+    -moz-border-radius:    5px;
+    -webkit-border-radius: 5px;
+}
+
+div#menu {
+    background:  #eeeeee;
+    border:      2px solid #bbbbbb;
+    float:       left;
+    margin-left: 20px;
+    padding:     10px;
+    width:       150px;
+
+    -moz-border-radius:    5px;
+    -webkit-border-radius: 5px;
+}
+
+div#menu a, div#menu .active {
+    font-weight: bold;
+}
+
+div#menu a {
+    display: block;
+    margin-left: 25px;
+}
+
+div#menu .active {
+    margin-left: 10px;
+}
+
+div#logo h1 {
+    display:     inline;
+    font-size:   50pt;
+    margin-left: 25px;
+}
+
+h1 {
+    text-shadow:    #bbbbbb 3px 3px;
+
+    -moz-text-shadow:    #bbbbbb 3px 3px;
+    -webkit-text-shadow: #bbbbbb 3px 3px;
+}
+
+h2, h3 {
+    text-shadow:    #bbbbbb 1px 1px;
+
+    -moz-text-shadow:    #bbbbbb 1px 1px;
+    -webkit-text-shadow: #bbbbbb 1px 1px;
+}
