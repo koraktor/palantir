@@ -29,6 +29,9 @@
 		027179CA11100E8600C0E5EB /* palantir-status-alternate.png in Resources */ = {isa = PBXBuildFile; fileRef = 027179C911100E8600C0E5EB /* palantir-status-alternate.png */; };
 		02717A641116A53D00C0E5EB /* SettingsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0271795E110CE68800C0E5EB /* SettingsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02717AA81116A61200C0E5EB /* PluginManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CEACE110ECC883002C45A4 /* PluginManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02B0B47E111E22EE009485B6 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 02B0B470111E22DC009485B6 /* Sparkle.framework */; };
+		02B0B4C0111E22FE009485B6 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B0B470111E22DC009485B6 /* Sparkle.framework */; };
+		02B0B4CA111E2510009485B6 /* sparkle_public.key in Resources */ = {isa = PBXBuildFile; fileRef = 02B0B4C9111E2510009485B6 /* sparkle_public.key */; };
 		02CEAF9510EE6616002C45A4 /* Configuration.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* Configuration.xib */; };
 		02CEAF9610EE661B002C45A4 /* PluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CEACE210ECC883002C45A4 /* PluginManager.m */; };
 		02CEAF9710EE661C002C45A4 /* PalantirAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* PalantirAppDelegate.m */; };
@@ -64,6 +67,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0213D764111CE5160027CF23 /* Palantir.framework in CopyFiles */,
+				02B0B47E111E22EE009485B6 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +86,8 @@
 		02731F4D10E7361300DCE8DF /* PalantirPluggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalantirPluggable.h; sourceTree = "<group>"; };
 		02731FF510E7427B00DCE8DF /* PalantirPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalantirPlugin.m; sourceTree = "<group>"; };
 		02AFE58510C398450042B28C /* PalantirPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalantirPlugin.h; sourceTree = "<group>"; };
+		02B0B470111E22DC009485B6 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		02B0B4C9111E2510009485B6 /* sparkle_public.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sparkle_public.key; sourceTree = "<group>"; };
 		02CEACE110ECC883002C45A4 /* PluginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = PluginManager.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		02CEACE210ECC883002C45A4 /* PluginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PluginManager.m; sourceTree = "<group>"; };
 		02CEAF8110EE65E1002C45A4 /* Palantir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palantir.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +105,17 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02B0B47B111E22E8009485B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B0B4C0111E22FE009485B6 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0218161310CD819600372D4B /* Shared Classes */ = {
@@ -129,6 +146,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02B0B470111E22DC009485B6 /* Sparkle.framework */,
 				02CEB3AA10F155B5002C45A4 /* Security.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
@@ -184,6 +202,7 @@
 				0260D7D6110370070012A350 /* Palantir.icns */,
 				02CEB47D10F2189A002C45A4 /* Palantir Framework-Info.plist */,
 				02CEAF8310EE65E1002C45A4 /* Palantir-Info.plist */,
+				02B0B4C9111E2510009485B6 /* sparkle_public.key */,
 				1DDD58140DA1D0A300B32029 /* Configuration.xib */,
 				0213D824111D95AF0027CF23 /* Credits.html */,
 			);
@@ -223,6 +242,7 @@
 				02CEAF7D10EE65E1002C45A4 /* Resources */,
 				02CEAF7E10EE65E1002C45A4 /* Sources */,
 				0213D76B111CE51B0027CF23 /* CopyFiles */,
+				02B0B47B111E22E8009485B6 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +301,7 @@
 				027179A8110F968D00C0E5EB /* palantir-status.png in Resources */,
 				027179CA11100E8600C0E5EB /* palantir-status-alternate.png in Resources */,
 				0213D825111D95AF0027CF23 /* Credits.html in Resources */,
+				02B0B4CA111E2510009485B6 /* sparkle_public.key in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +401,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -387,6 +412,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "Palantir-Info.plist";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
 				INFOPLIST_PREFIX_HEADER = $PROJECT_TEMP_DIR/revision;
 				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(HOME)/Applications";
@@ -408,11 +434,16 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
 				INFOPLIST_FILE = "Palantir-Info.plist";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
 				INFOPLIST_PREFIX_HEADER = $PROJECT_TEMP_DIR/revision;
 				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(HOME)/Applications";

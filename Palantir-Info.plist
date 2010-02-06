@@ -34,5 +34,9 @@
 	<string>Configuration</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>SUFeedURL</key>
+	<string>http://koraktor.github.com/palantir/updates.xml</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>sparkle_public.key</string>
 </dict>
 </plist>
