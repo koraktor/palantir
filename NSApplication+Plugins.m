@@ -11,7 +11,7 @@
 @implementation NSApplication (Plugins)
 
 - (NSArray *)applicationPlugInsFolders {
-    NSString *applicationName = [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleName"];
+    NSString *applicationName = [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleExecutable"];
     NSMutableArray *pluginPaths = [NSMutableArray arrayWithCapacity:3];
 
     // PlugIns folder inside the application bundle
