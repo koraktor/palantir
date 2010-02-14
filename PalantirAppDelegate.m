@@ -40,6 +40,7 @@
 
 -(IBAction)openConfiguration:(id)sender {
 	[self.window makeKeyAndOrderFront:self];
+    [NSApp activateIgnoringOtherApps:YES];
 }
 
 -(IBAction)showAboutPanel:(id)sender {
@@ -50,11 +51,13 @@
     }
 
     [NSApp orderFrontStandardAboutPanelWithOptions:aboutDictionary];
+    [NSApp activateIgnoringOtherApps:YES];
 }
 
 - (void)dealloc {
     [[self.statusItem alternateImage] release];
     [[self.statusItem image] release];
+    [self.statusItem dealloc];
     [super dealloc];
 }
 
