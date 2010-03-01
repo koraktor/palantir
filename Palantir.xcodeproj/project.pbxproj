@@ -40,6 +40,7 @@
 		02CEB48D10F2190A002C45A4 /* PalantirPluggable.h in Headers */ = {isa = PBXBuildFile; fileRef = 02731F4D10E7361300DCE8DF /* PalantirPluggable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02CEB48E10F2190A002C45A4 /* PalantirPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 02AFE58510C398450042B28C /* PalantirPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		02CEB48F10F2190A002C45A4 /* PalantirPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 02731FF510E7427B00DCE8DF /* PalantirPlugin.m */; };
+		02D23E6E113C3B14004062B5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CEB3AA10F155B5002C45A4 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				02B0B4C0111E22FE009485B6 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02D23E6D113C3B0D004062B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D23E6E113C3B14004062B5 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +271,7 @@
 				02CEB47710F2189A002C45A4 /* Headers */,
 				02CEB47810F2189A002C45A4 /* Resources */,
 				02CEB47910F2189A002C45A4 /* Sources */,
+				02D23E6D113C3B0D004062B5 /* Frameworks */,
 			);
 			buildRules = (
 			);

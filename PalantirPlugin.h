@@ -29,6 +29,8 @@
 }
 
 - (id)initWithSettingsManager:(SettingsManager *)settingsManager;
+- (NSString *)passwordForService:(NSString *)serviceName andAccount:(NSString *)accountName;
+- (void)setPasswordForService:(NSString *)serviceName andAccount:(NSString *)accountName to:(NSString *)aPassword;
 - (void)setSettingWithName:(NSString *)aName toValue:(id)aValue;
 - (id)settingWithName:(NSString *)aName;
 

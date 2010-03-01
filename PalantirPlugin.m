@@ -45,6 +45,48 @@
     [self.statusItem retain];
 }
 
+- (NSString *)passwordForService:(NSString *)serviceName andAccount:(NSString *)accountName {
+    char *passwordData;
+    SecKeychainFindGenericPassword(NULL,
+                                   [serviceName lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
+                                   [serviceName cStringUsingEncoding:NSUTF8StringEncoding],
+                                   [accountName lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
+                                   [accountName cStringUsingEncoding:NSUTF8StringEncoding],
+                                   0,
+                                   (void **)&passwordData,
+                                   NULL);
+
+    return [NSString stringWithCString:passwordData encoding:NSUTF8StringEncoding];
+}
+
+- (void)setPasswordForService:(NSString *)serviceName andAccount:(NSString *)accountName to:(NSString *)aPassword {
+    SecKeychainItemRef keychainItemRef;
+    SecKeychainFindGenericPassword(NULL,
+                                   [serviceName lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
+                                   [serviceName cStringUsingEncoding:NSUTF8StringEncoding],
+                                   [accountName lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
+                                   [accountName cStringUsingEncoding:NSUTF8StringEncoding],
+                                   0,
+                                   NULL,
+                                   &keychainItemRef);
+    if(keychainItemRef != NULL) {
+        SecKeychainItemModifyAttributesAndData(keychainItemRef,
+                                               NULL,
+                                               [aPassword lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
+                                               [aPassword cStringUsingEncoding:NSUTF8StringEncoding]);
+        CFRelease(keychainItemRef);
+    } else {
+        SecKeychainAddGenericPassword(NULL,
+                                      [serviceName lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
+                                      [serviceName cStringUsingEncoding:NSUTF8StringEncoding],
+                                      [accountName lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
+                                      [accountName cStringUsingEncoding:NSUTF8StringEncoding],
+                                      [aPassword lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
+                                      [aPassword cStringUsingEncoding:NSUTF8StringEncoding],
+                                      NULL);
+    }
+}
+
 - (void)setSettingWithName:(NSString *)aName toValue:(id)aValue {
     [settingsManager setSettingWithName:aName toValue:aValue forPlugin:self];
 }
