@@ -81,6 +81,7 @@
                                                                  [pluginBundle objectForInfoDictionaryKey:@"CFBundleName"], @"name",
                                                                  pluginBundlePath, @"path",
                                                                  [NSMutableDictionary dictionary], @"settings",
+                                                                 [pluginBundle objectForInfoDictionaryKey:@"CFBundleShortVersionString"], @"version",
                                                                  nil];
                         [self.availablePlugins setValue:pluginDictionary forKey:pluginIdentifier];
                         [self.pluginIdentifiers addObject:pluginIdentifier];
@@ -108,7 +109,10 @@
     if([[aTableColumn identifier] isEqualToString:@"active"]) {
         return [NSNumber numberWithBool:[self isPluginActive:pluginIdentifier]];
     } else if ([[aTableColumn identifier] isEqualToString:@"name"]) {
-        return [[self.availablePlugins objectForKey:pluginIdentifier] objectForKey:@"name"];
+        NSString *pluginName = [[self.availablePlugins objectForKey:pluginIdentifier] objectForKey:@"name"];
+        NSString *pluginVersion = [[self.availablePlugins objectForKey:pluginIdentifier] objectForKey:@"version"];
+        pluginName = [NSString stringWithFormat:@"<span style=\"font-family: sans-serif\"><strong>%@</strong><br />Version: %@</span>", pluginName, pluginVersion];
+        return [[NSMutableAttributedString alloc] initWithHTML:[pluginName dataUsingEncoding:NSUTF8StringEncoding] documentAttributes:NULL];
     } else {
         return nil;
     }
