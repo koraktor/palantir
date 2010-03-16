@@ -11,7 +11,7 @@
 
 @implementation PalantirAppDelegate
 
-@synthesize menu, pluginManager, statusItem, window;
+@synthesize menu, pluginManager, pluginTimers, statusItem, window;
 
 - (void)applicationWillFinishLaunching:(NSNotification *)notification {
     NSImage *statusIcon = [NSImage imageNamed:@"palantir-status.png"];
@@ -31,16 +31,23 @@
 
     [self.pluginManager initialize];
 
-    NSRunLoop *mainRunLoop = [NSRunLoop mainRunLoop];
+    self.pluginTimers = [NSDictionary dictionary];
     for(NSObject<PalantirPluggable> *plugin in [self.pluginManager.activePlugins allValues]) {
-        NSTimer *timer = [NSTimer timerWithTimeInterval:[plugin actionInterval] target:plugin selector:@selector(action) userInfo:nil repeats:YES];
-        [mainRunLoop addTimer:timer forMode:NSDefaultRunLoopMode];
+        [self reschedulePlugin:plugin];
     }
 }
 
 -(IBAction)openConfiguration:(id)sender {
 	[self.window makeKeyAndOrderFront:self];
     [NSApp activateIgnoringOtherApps:YES];
+}
+
+- (void)reschedulePlugin:(NSObject<PalantirPluggable> *)plugin {
+    NSTimer *timer = [self.pluginTimers objectForKey:[[plugin bundle] objectForInfoDictionaryKey:@"identifier"]];
+    if(timer != nil) {
+        [timer invalidate];
+    }
+    timer = [NSTimer scheduledTimerWithTimeInterval:[plugin actionInterval] target:plugin selector:@selector(action) userInfo:nil repeats:YES];
 }
 
 -(IBAction)showAboutPanel:(id)sender {
