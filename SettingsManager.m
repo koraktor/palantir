@@ -15,7 +15,11 @@
 - (void)setSettingWithName:(NSString *)aName toValue:(id)aValue forPlugin:(PalantirPlugin *)aPlugin {
     NSMutableDictionary *plugins = self.pluginManager.availablePlugins;
     NSMutableDictionary *pluginSettings = [[plugins objectForKey:aPlugin.identifier] objectForKey:@"settings"];
-    [pluginSettings setObject:aValue forKey:aName];
+    if(aValue != nil) {
+        [pluginSettings setObject:aValue forKey:aName];
+    } else {
+        [pluginSettings removeObjectForKey:aName];
+    }
     [[NSUserDefaults standardUserDefaults] setObject:plugins forKey:@"plugins"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
