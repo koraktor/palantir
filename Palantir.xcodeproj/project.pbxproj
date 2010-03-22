@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0213476E11517CC60070E764 /* MAAttachedWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 0213476C11517CC60070E764 /* MAAttachedWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0213476F11517CC60070E764 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0213476D11517CC60070E764 /* MAAttachedWindow.m */; };
+		0213477211517CFB0070E764 /* PalantirStatusItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0213477011517CFB0070E764 /* PalantirStatusItemView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0213477311517CFB0070E764 /* PalantirStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0213477111517CFB0070E764 /* PalantirStatusItemView.m */; };
 		0213D764111CE5160027CF23 /* Palantir.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 02CEB47C10F2189A002C45A4 /* Palantir.framework */; };
 		0213D825111D95AF0027CF23 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 0213D824111D95AF0027CF23 /* Credits.html */; };
 		0260D7D7110370070012A350 /* Palantir.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0260D7D6110370070012A350 /* Palantir.icns */; };
@@ -48,7 +52,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0213D7F3111D870A0027CF23 /* Git version */;
+			remoteGlobalIDString = 0213D7F3111D870A0027CF23;
 			remoteInfo = "Git version";
 		};
 		02722B7A10F24C09009039E2 /* PBXContainerItemProxy */ = {
@@ -75,6 +79,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0213476C11517CC60070E764 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
+		0213476D11517CC60070E764 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
+		0213477011517CFB0070E764 /* PalantirStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PalantirStatusItemView.h; sourceTree = "<group>"; };
+		0213477111517CFB0070E764 /* PalantirStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PalantirStatusItemView.m; sourceTree = "<group>"; };
 		0213D824111D95AF0027CF23 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		0218151A10CC0A0000372D4B /* NSApplication+Plugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+Plugins.h"; sourceTree = "<group>"; };
 		0218151B10CC0A0000372D4B /* NSApplication+Plugins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+Plugins.m"; sourceTree = "<group>"; };
@@ -130,6 +138,10 @@
 		0218161310CD819600372D4B /* Shared Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0213477011517CFB0070E764 /* PalantirStatusItemView.h */,
+				0213477111517CFB0070E764 /* PalantirStatusItemView.m */,
+				0213476C11517CC60070E764 /* MAAttachedWindow.h */,
+				0213476D11517CC60070E764 /* MAAttachedWindow.m */,
 				02731F4D10E7361300DCE8DF /* PalantirPluggable.h */,
 				02AFE58510C398450042B28C /* PalantirPlugin.h */,
 				02731FF510E7427B00DCE8DF /* PalantirPlugin.m */,
@@ -238,6 +250,8 @@
 				02717A641116A53D00C0E5EB /* SettingsManager.h in Headers */,
 				02CEB48E10F2190A002C45A4 /* PalantirPlugin.h in Headers */,
 				02CEB48D10F2190A002C45A4 /* PalantirPluggable.h in Headers */,
+				0213476E11517CC60070E764 /* MAAttachedWindow.h in Headers */,
+				0213477211517CFB0070E764 /* PalantirStatusItemView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +372,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				02CEB48F10F2190A002C45A4 /* PalantirPlugin.m in Sources */,
+				0213476F11517CC60070E764 /* MAAttachedWindow.m in Sources */,
+				0213477311517CFB0070E764 /* PalantirStatusItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

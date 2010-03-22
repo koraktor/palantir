@@ -20,4 +20,8 @@
 - (NSString *)name;
 - (NSStatusItem *)statusItem;
 
+@optional
+
+- (void)toggleAttachedWindowAtPoint:(NSPoint)aPoint;
+
 @end
