@@ -47,21 +47,22 @@
 
 - (NSString *)passwordForService:(NSString *)serviceName andAccount:(NSString *)accountName {
     char *passwordData;
+    UInt32 passwordLength;
     SecKeychainFindGenericPassword(NULL,
                                    [serviceName lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
                                    [serviceName cStringUsingEncoding:NSUTF8StringEncoding],
                                    [accountName lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
                                    [accountName cStringUsingEncoding:NSUTF8StringEncoding],
-                                   0,
+                                   &passwordLength,
                                    (void **)&passwordData,
                                    NULL);
 
-    return [NSString stringWithCString:passwordData encoding:NSUTF8StringEncoding];
+    return [[[NSString alloc] initWithCStringNoCopy:passwordData length:passwordLength freeWhenDone:YES] autorelease];
 }
 
 - (void)setPasswordForService:(NSString *)serviceName andAccount:(NSString *)accountName to:(NSString *)aPassword {
     SecKeychainItemRef keychainItemRef;
-    SecKeychainFindGenericPassword(NULL,
+    OSStatus result = SecKeychainFindGenericPassword(NULL,
                                    [serviceName lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
                                    [serviceName cStringUsingEncoding:NSUTF8StringEncoding],
                                    [accountName lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
@@ -69,13 +70,7 @@
                                    0,
                                    NULL,
                                    &keychainItemRef);
-    if(keychainItemRef != NULL) {
-        SecKeychainItemModifyAttributesAndData(keychainItemRef,
-                                               NULL,
-                                               [aPassword lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
-                                               [aPassword cStringUsingEncoding:NSUTF8StringEncoding]);
-        CFRelease(keychainItemRef);
-    } else {
+    if(result == errSecItemNotFound) {
         SecKeychainAddGenericPassword(NULL,
                                       [serviceName lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
                                       [serviceName cStringUsingEncoding:NSUTF8StringEncoding],
@@ -84,6 +79,12 @@
                                       [aPassword lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
                                       [aPassword cStringUsingEncoding:NSUTF8StringEncoding],
                                       NULL);
+    } else {
+        SecKeychainItemModifyAttributesAndData(keychainItemRef,
+                                               NULL,
+                                               [aPassword lengthOfBytesUsingEncoding:NSUTF8StringEncoding],
+                                               [aPassword cStringUsingEncoding:NSUTF8StringEncoding]);
+        CFRelease(keychainItemRef);
     }
 }
 
