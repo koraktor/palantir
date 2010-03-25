@@ -158,9 +158,7 @@
         [attachedWindow setDelegate:self];
         [attachedWindow makeKeyWindow];
     } else {
-        [attachedWindow orderOut:self];
-        [attachedWindow release];
-        attachedWindow = nil;
+        [attachedWindow resignKeyWindow];
     }
 }
 
@@ -170,6 +168,11 @@
 
 - (void)windowDidResignKey:(NSNotification *)notification {
     [statusItemView setActive:NO];
+
+    if(attachedWindow != nil) {
+        [attachedWindow release];
+        attachedWindow = nil;
+    }
 }
 
 - (void)dealloc {
