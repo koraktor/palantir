@@ -91,6 +91,8 @@
                         }
                     }
                 }
+            } else {
+                NSLog(@"%@", loadError);
             }
 		}
 	}
