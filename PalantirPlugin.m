@@ -12,7 +12,7 @@
 @implementation PalantirPlugin
 
 @synthesize bundle, configurationTabViewItem, configurationView, identifier,
-            menu, name, statusItem;
+            menu, name, statusItem, timer;
 
 - (id)initWithSettingsManager:(SettingsManager *)aSettingsManager {
     self.bundle        = [NSBundle bundleForClass:[self class]];
@@ -61,6 +61,13 @@
                                    NULL);
 
     return [[[NSString alloc] initWithCStringNoCopy:passwordData length:passwordLength freeWhenDone:YES] autorelease];
+}
+
+- (void)reschedule {
+    if(timer != nil) {
+        [timer invalidate];
+    }
+    timer = [NSTimer scheduledTimerWithTimeInterval:[self actionInterval] target:self selector:@selector(action) userInfo:nil repeats:YES];
 }
 
 - (void)setAttachedWindowView:(NSView *)aView {
@@ -188,6 +195,11 @@
     if(statusItemView != nil) {
         [statusItemView release];
         [statusItemView dealloc];
+    }
+
+    if(timer != nil) {
+        [timer invalidate];
+        [timer release];
     }
 
     [super dealloc];

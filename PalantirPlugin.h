@@ -25,6 +25,7 @@
     NSString               *name;
     NSStatusItem           *statusItem;
     PalantirStatusItemView *statusItemView;
+    NSTimer                *timer;
 
 @private
     MAAttachedWindow *attachedWindow;
@@ -35,6 +36,7 @@
 
 - (id)initWithSettingsManager:(SettingsManager *)settingsManager;
 - (NSString *)passwordForService:(NSString *)serviceName andAccount:(NSString *)accountName;
+- (void)reschedule;
 - (void)setAttachedWindowView:(NSView *)aView;
 - (void)setPasswordForService:(NSString *)serviceName andAccount:(NSString *)accountName to:(NSString *)aPassword;
 - (void)setSettingWithName:(NSString *)aName toValue:(id)aValue;
@@ -50,5 +52,6 @@
 @property (nonatomic, retain) NSMenu        *menu;
 @property (nonatomic, retain) NSString      *name;
 @property (nonatomic, retain) NSStatusItem  *statusItem;
+@property (nonatomic, retain) NSTimer       *timer;
 
 @end

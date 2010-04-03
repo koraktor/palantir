@@ -45,6 +45,7 @@
             if(url != NULL) {
                 NSString *userAppSupportPluginFolder = [NSString stringWithFormat:@"%@/%@/PlugIns", [(NSURL *)url path], applicationName];
                 [pluginPaths addObject:userAppSupportPluginFolder];
+                CFRelease(url);
             }
         }
 
@@ -55,6 +56,7 @@
             if(url != NULL) {
                 NSString *systemAppSupportPluginFolder = [NSString stringWithFormat:@"%@/%@/PlugIns", [(NSURL *)url path], applicationName];
                 [pluginPaths addObject:systemAppSupportPluginFolder];
+                CFRelease(url);
             }
         }
     }

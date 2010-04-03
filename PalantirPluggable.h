@@ -18,7 +18,9 @@
 - (NSTabViewItem *)configurationTabViewItem;
 - (NSMenu *)menu;
 - (NSString *)name;
+- (void)reschedule;
 - (NSStatusItem *)statusItem;
+- (NSTimer *)timer;
 
 @optional
 

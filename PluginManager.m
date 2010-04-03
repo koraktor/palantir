@@ -58,9 +58,9 @@
     NSDictionary *pluginDictionary = [self.availablePlugins objectForKey:pluginIdentifier];
     NSObject<PalantirPluggable> *plugin = [self.activePlugins objectForKey:pluginIdentifier];
     [self.configurationTabView removeTabViewItem:[plugin configurationTabViewItem]];
-    [plugin dealloc];
     [pluginDictionary setValue:[NSNumber numberWithBool:NO] forKey:@"active"];
     [self.activePlugins setValue:nil forKey:pluginIdentifier];
+    [plugin dealloc];
 }
 
 - (void)findPlugins {

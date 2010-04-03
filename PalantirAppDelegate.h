@@ -14,19 +14,16 @@
 
     NSMenu        *menu;
     PluginManager *pluginManager;
-    NSDictionary  *pluginTimers;
     NSStatusItem  *statusItem;
     NSWindow      *window;
 
 }
 
--(IBAction)openConfiguration:(id)sender;
-- (void)reschedulePlugin:(NSObject<PalantirPluggable> *)plugin;
--(IBAction)showAboutPanel:(id)sender;
+- (IBAction)openConfiguration:(id)sender;
+- (IBAction)showAboutPanel:(id)sender;
 
 @property (assign) IBOutlet   NSMenu        *menu;
 @property (assign) IBOutlet   PluginManager *pluginManager;
-@property (nonatomic, retain) NSDictionary  *pluginTimers;
 @property (nonatomic, retain) NSStatusItem  *statusItem;
 @property (assign) IBOutlet   NSWindow      *window;
 
